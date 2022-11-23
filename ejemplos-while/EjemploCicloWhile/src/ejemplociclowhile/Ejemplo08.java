@@ -30,11 +30,14 @@ public class Ejemplo08 {
         boolean bandera = true;
 
         System.out.println("Ingrese las notas de los estudiantes de su materia");
-        while (bandera) {
+        while (bandera==true) {
             System.out.println("Ingrese calificación:");
             calificacion = entrada.nextDouble();
             suma_total = suma_total + calificacion;
-            contador = contador + 1;
+            contador = contador + 1;// cuenta las veces que asignamos 
+            //una calificacion es decir al momento de digitar un numero 
+            //ejemplo(6) ya lo guarda 1 vez luego si digitamos un sergundo 
+            //numero lo volvera aguardar es decir seran 2
 
             entrada.nextLine(); // Ojo usamos el limpiador del scanner (buffer)
 
